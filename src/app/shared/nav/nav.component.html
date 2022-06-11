@@ -1,0 +1,71 @@
+<header class="header">
+    <nav class="nav">
+        <img class="logo" src="../../../assets/logo-page.webp" alt="Logo-Page">
+        <ul class="list">
+            <li>
+                <span class="material-symbols-outlined">
+                storefront
+                </span>
+                Inicio
+            </li>
+            <li>
+                <span class="material-symbols-outlined">
+                    rocket_launch
+                </span>
+                Productos
+            </li>
+            <li>
+                <span class="material-symbols-outlined">
+                    contact_support
+                </span>
+                Nosotros
+            </li>
+            <li>
+                <span class="material-symbols-outlined">
+                    mail
+                </span>
+                Contacto
+            </li>
+        </ul>
+    </nav>
+
+        <nav class="nav-movil">
+            <img class="logo" src="../../../assets/logo-page.webp" alt="Logo-Page">
+        <span class="material-symbols-outlined menu-icon" [class.displayNone]="mostrarAside" (click)="cambiarMostrarAside()">
+            menu
+        </span>
+        <div class="aside-movil" [class.displayNone]="!mostrarAside">
+            <ul class="list-movil">
+                <div class="contenedor-cerrar">
+                    <span class="material-symbols-outlined cerrar" (click)="cambiarMostrarAside()">
+                        close
+                    </span>
+                </div>
+                <li>
+                    <span class="material-symbols-outlined">
+                    storefront
+                    </span>
+                    Inicio
+                </li>
+                <li>
+                    <span class="material-symbols-outlined">
+                        rocket_launch
+                    </span>
+                    Productos
+                </li>
+                <li>
+                    <span class="material-symbols-outlined">
+                        contact_support
+                    </span>
+                    Nosotros
+                </li>
+                <li>
+                    <span class="material-symbols-outlined">
+                        mail
+                    </span>
+                    Contacto
+                </li>
+            </ul>
+        </div>
+        </nav>
+</header>

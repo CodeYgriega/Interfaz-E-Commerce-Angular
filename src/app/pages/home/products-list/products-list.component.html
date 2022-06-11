@@ -1,0 +1,8 @@
+<main>
+    <h1 class="title">Online Shop Products:</h1>
+    <div class="contenedor-items-products">
+        <div  *ngFor="let producto of productos">
+            <app-item-product [producto]="producto"></app-item-product>
+        </div>
+    </div>
+</main>

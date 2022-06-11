@@ -1,0 +1,31 @@
+section {
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-componentes {
+    display: flex;
+    width: 90%;
+    height: auto;
+}
+
+.contenedor-filter-form {
+    border-right: 3px solid rgb(214, 6, 186);
+    flex-grow: 1;
+    width: 25%;
+}
+
+.contenedor-products-list {
+    flex-grow: 10;
+}
+
+@media screen and (min-width: 340px) and (max-width: 800px) {
+    .contenedor-componentes {
+        flex-wrap: wrap;
+    }
+    .contenedor-filter-form {
+    border-right: none;
+    width: 100%;
+    margin-bottom: 50px;
+}
+}
